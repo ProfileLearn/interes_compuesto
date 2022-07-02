@@ -1,0 +1,75 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: gray;
+}
+
+input {
+  line-height: 2;
+  border-radius: 5px;
+}
+
+#resultado {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#resultadoNeto {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#calcular {
+  background-color: rgb(22, 112, 22);
+}
+
+#reset {}
+
+#copiar {
+  background-color: rgb(178, 178, 1);
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "display display display display"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn";
+}
+
+.display {
+  grid-area: display;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.display input {
+  text-align: center;
+  width: 100%;
+}
+
+.btn {
+  grid: auto-flow;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+#copiarEnCalc {
+  width: 100%;
+}
+
+.ocultar, .mostrar {
+  width: 100%;
+
+}
